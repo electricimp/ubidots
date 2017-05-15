@@ -16,12 +16,12 @@ Ubidots <- Ubidots.Client("<YOUR_AUTH_TOKEN>");
 
 ## Class Methods 
 
-## Ubidots.setDeviceName(*deviceName*)
+## Ubidots.setDeviceLabel(*deviceLabel*)
 
-This method allows you to set the name of your data source (ie. a device). When you instantiate the Ubidots client object, the device name is automatically set to the ID of your device. Should you prefer a more friendly name for your device, you can use this method to set the device name to any other string. This value is used for all subsequent attempts to send data to Ubidots.
- 
-```squirrel
-Ubidots.setDeviceName(imp.configparams.deviceid);
+This method allows you to set the label of your data source (ie. a device). When you instantiate the Ubidots client object, the device label is automatically set to the ID of your device. Should you prefer a more friendly label for your device, you can use this method to set the device label to any other string. This value is used for all subsequent attempts to send data to Ubidots.
+
+```c
+Ubidots.setDeviceLabel("device_label_here")
 ```
 
 ### Ubidots.get(*deviceLabel, variableLabel, callback*)
